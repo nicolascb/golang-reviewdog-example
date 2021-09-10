@@ -1,0 +1,1 @@
+# golang-reviewdog-example
