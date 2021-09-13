@@ -10,7 +10,7 @@ jobs:
       - name: golangci-lint w/ github-pr-review
         uses: reviewdog/action-golangci-lint@v2 
         with:
-          golangci_lint_flags: "./testdata"
+          golangci_lint_flags: "./app"
           tool_name: "golangci-lint-github-pr-review"
           reporter: "github-pr-review"
 
@@ -23,7 +23,7 @@ jobs:
       - name: golangci-lint w/ github-check
         uses: reviewdog/action-golangci-lint@v2
         with:
-          golangci_lint_flags: "./testdata"
+          golangci_lint_flags: "./app"
           tool_name: "golangci-lint-github-check"
           level: warning
           reporter: "github-check"
